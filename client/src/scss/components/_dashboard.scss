@@ -1,0 +1,91 @@
+.dash-container {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    min-height: 62.8rem;
+    // border: 2px solid black;
+    width: auto;
+    gap: 10rem;
+
+    .dash-left {
+        flex: 0.8;
+        margin-top: 6rem;
+        // border: 2px solid black;
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+
+    .dash-right {
+        margin-top: 6rem;
+        flex: 2;
+        // border: 2px solid black;
+        display: flex;
+        align-items:flex-start;
+        flex-direction: column;
+        height: auto;
+
+        .grid-container:first-child {
+            border-top: 2px solid   #f5f7fcdf;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+
+        .grid-container:last-child {
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+        }
+
+        .grid-container {
+            box-shadow: 0px 10px 4rem 0.1px rgba(165, 148, 148, 0.251);
+            background-color: white;
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            .grid-items {
+                font-size: 1.4rem;
+                font-weight: bold;
+                display: flex;
+                justify-content:space-between ;
+                align-items: center;
+                padding: 1.5rem;
+                border-bottom: 2px solid #f5f7fcdf;
+                width: 90%;
+
+                .div-first
+                {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    a{
+                        list-style: none;
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+                span
+                {
+                    font-size: 1rem;
+                    display: block !important;
+                    color: silver;
+                }
+
+                div{
+                    display: flex;
+                    align-items: center;
+                    .link {
+                        margin: 0.5rem;
+                        font-size: 1.8rem;
+                        color: black;
+                    }
+                }
+
+            }
+        }
+
+    }
+}

@@ -1,0 +1,41 @@
+.name-right
+{
+    background: white;
+    flex: 1.5;
+    height:fit-content;
+    // display: block;
+    max-width: 80%; 
+    padding: 2rem;
+    margin: 6rem 15rem 0 0;
+    box-shadow: 0px 10px 4rem 0.1px rgba(165, 148, 148, 0.251);
+
+    h3{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    input
+    {
+        width: 100%;
+        display: block;
+        margin: 1rem 0 1rem 0;
+        padding: 1rem;
+        outline: none;
+        border: none;
+        // background: #c2c5ccb0;
+
+        &:focus
+        {
+            border-bottom: 3px solid green;
+        }
+    }
+
+    .submit
+    {
+        background: green;
+        color: white;
+        border: none !important;
+        font-weight: bold;
+    }
+
+}

@@ -1,0 +1,117 @@
+.home-container {
+    width: 100%;
+    min-height: max-content !important;
+    display: flex;
+    margin-top: 8rem !important;
+    // border: 2px solid black;
+    background: #f5f7fc;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: column;
+
+    .home-smaller {
+        background-color: white;
+        width: 60%;
+        margin-left: 10rem;
+        margin-top: 5rem;
+        padding: 2rem;
+        // border: 2px solid red;
+        padding-top: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 5rem;
+        box-shadow: 0px 10px 4rem 0.1px rgba(165, 148, 148, 0.251);
+
+        .home-items {
+            // border: 2px solid green;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            min-height: 15rem;
+            flex-direction: row;
+            padding: 2rem;
+            // margin:1rem 0 0 0;
+            border-bottom: 2px solid rgb(239, 236, 236) ;
+
+           span{
+            font-size: 2rem;
+            font-weight: bold;
+           }
+
+            .home-left {
+                flex: 1.5;
+
+                .avatar {
+                    // padding: 2rem;
+                    display: flex;
+
+                    .avatar-left {
+                        width: 3rem;
+                        height: 3rem;
+                        border-radius: 50%;
+                        background: green;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: 1.52rem;
+                    }
+
+                    .avatar-right {
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 1rem;
+                        font-weight: bold;
+                    }
+                }
+
+                .content-title
+                {
+                    margin-top: 1rem;
+                    font-size: 3rem;
+                    font-weight: 900;
+
+                    a{
+                        list-style: none;
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+
+                .content-body
+                {
+                    margin-top: 0.5rem;
+                    font-size: 1.1rem;
+                }
+
+                .content-desc
+                {
+                    margin-top: 0.5rem;
+                    font-size: 1.4rem;
+                }
+            }
+            .home-left:last-child()
+            {
+                border: none;
+            }
+            .home-right {
+                flex: 1;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                margin-left: 1rem;
+                justify-content: center;
+
+                &-image{
+                    width: 70%;
+                    height: 70%;
+                    // object-fit: cover;
+                }
+
+            }
+        }
+    }
+}

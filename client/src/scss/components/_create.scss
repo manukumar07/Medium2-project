@@ -1,0 +1,185 @@
+.create_main {
+    margin-top: 8rem;
+    display: flex;
+    // border: 2px solid black;
+    height: 63rem;
+
+    .main_left {
+        flex: 1.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        // border: 2px solid red;
+
+        
+        .desc
+        {
+            margin-top: 1rem;
+
+            textarea{
+                padding: 1rem;
+                width: calc(100% - 3rem);
+                border: none;
+                outline: none;
+
+                &:focus {
+                    border-bottom: 4px solid green;
+                }
+            }
+
+            span{
+                margin-left:calc(100% - 8rem);;
+            }
+        }
+
+        .create_form {
+            background-color: white;
+            min-height: 80%;
+            width: 70%;
+            border-radius: 2px;
+            box-shadow: 0px 10px 4rem 0.1px rgba(165, 148, 148, 0.251);
+            padding: 10px;
+            font-weight: bold;
+
+            label {
+                color: black;
+                font-size: 1.3rem;
+                margin-bottom: 5px;
+            }
+
+            form {
+                margin-bottom: 1rem;
+            }
+
+            h3 {
+                margin-bottom: .8rem;
+                font-size: 1.8rem;
+            }
+
+            .input_title {
+                display: flex;
+                flex-direction: column;
+
+
+                input {
+                    border: none;
+                    padding: 10px;
+                    outline: none;
+
+                    &:focus {
+                        border-bottom: 4px solid green;
+                    }
+                }
+            }
+
+            .input_file {
+                margin: .8rem 0;
+                background-color: green;
+                padding: 0.8rem;
+                color: white;
+                width: 100%;
+                outline: none;
+                border: none;
+                cursor: pointer;
+
+                label {
+                    color: white;
+                    font-size: 1.2rem;
+                    margin-bottom: 5px;
+                    width: 100%;
+                    padding: 0.2rem;
+                }
+
+                input {
+                    visibility: hidden;
+                }
+            }
+        }
+
+    }
+
+    .main_right {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 1rem;
+        // border: 2px solid red;
+
+        .create_slug {
+            background-color: white;
+            min-height: 80%;
+            width: 70%;
+            border-radius: 2px;
+            box-shadow: 0px 10px 4rem 0.1px rgba(165, 148, 148, 0.251);
+            padding: 10px;
+            font-weight: bold;
+
+            .input_file {
+                margin: .8rem 0;
+                background-color: green;
+                padding: 0.8rem;
+                color: white;
+                width: 100%;
+                outline: none;
+                border: none;
+                cursor: pointer;
+            }
+            .imagepreview {
+                img {
+                    margin-top: 1rem;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+
+            label {
+                color: black;
+                font-size: 1.3rem;
+                margin-bottom: 5px;
+            }
+
+            .post_url {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    border: none;
+                    padding: 10px;
+                    outline: none;
+
+                    &:focus {
+                        border-bottom: 4px solid green;
+                    }
+                }
+            }
+
+            .slug_button {
+                background-color: green;
+                padding: 1rem;
+                display: inline-block;
+                margin-top: 1rem;
+
+                button {
+                    border: none;
+                    outline: none;
+                    color: white;
+                    background: green;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and  (max-device-width: 850px) {
+
+    .create_main {
+        flex-direction: column;
+    }
+
+}

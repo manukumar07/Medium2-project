@@ -1,0 +1,86 @@
+.register-container
+{
+    // border: 2px solid black;
+    width: 100vw;
+    height:80rem;
+    margin-top: 8rem;
+    height: 62.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .form{
+        width: 50%;
+        height: 55rem;
+        // border: 2px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0px 10px 4rem 0.1px rgba(165, 148, 148, 0.251);
+        span{
+            margin-bottom: 1rem;
+            font-size: 3rem;
+        }
+
+        #register-form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // border: 2px solid green;
+            flex-direction: column;
+            width: 80%;
+            input{
+                margin: 2rem;
+                width: 50rem;
+                height: 5rem;
+                padding-left: 2rem;
+                outline: none;
+                border: none;
+                font-size: 1.5rem;
+                transition: all 0.5s ease-in-out;
+                &:hover
+                {
+                    // background-color: rgb(240, 244, 249);
+                    border-bottom: 1px solid black;
+                    scale: 1.07;
+                }
+            }
+
+            .button{
+                margin: 2rem;
+                width: 50rem;
+                height: 5rem;
+                outline: none;
+                border:none;
+                font-size: 1.5rem;
+                font-weight: bold;
+                border-radius: 2px;
+                background-color: white;
+                transition: all 0.5s ease-in-out;
+                &:hover
+                {
+                    border: 1px solid black;
+                    scale: 1.1;
+                    
+                    // background-color: rgb(240, 244, 249);
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and  (max-device-width: 850px) {
+  .register-container {
+    .form {
+        #register-form{
+       input{
+        width: 80%;
+       }
+    }
+    }
+  }
+
+}
+
